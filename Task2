@@ -1,0 +1,56 @@
+python中列表
+      列表是最常用的Python数据类型，它可以作为一个方括号内的逗号分隔值出现。
+      列表的数据项不需要具有相同的类型
+      创建一个列表，只要把逗号分隔的不同的数据项使用方括号括起来即可。
+      
+列表的基本操作
+      创建：在Python中，用方括号（[] ）来表示列表，并用逗号来分隔其中的元素。
+      append()：通过append可以向列表添加元素  demo:  xxx.append(b) 
+      del()：根据下标进行删除 de默认删除最后一个元素 demo:  del xxx[0]
+      pop():默认删除最后一个元素 可加下标  删除后依然可用该元素 demo: list1 = ['a', 'b', 'c']   list_pop=list1.pop(1)
+      拷贝：采用切片的方法  demo：l1=["hello","world"] l2=l1[:]
+列表其他常用方法：
+      extend  通过extend可以将另一个集合中的元素逐一添加到列表中
+      insert  insert(index, object) 在指定位置index前插入元素object
+      remove  根据元素的值进行删除
+      sort方法是将list按特定顺序重新排列，默认为由小到大，参数reverse=True可改为倒序，由大到小。 sorted方法排序不修改原值
+                      
+元组
+      Python的元组与列表类似，不同之处在于元组的元素不能修改。使用小括号
+
+元组的基本操作
+      元组创建只需要在括号中添加元素，并使用逗号隔开即可。
+      元组可以使用下标索引来访问元组中的值。
+      元组的内置函数count, index    index和count与字符串和列表中的用法相同
+      
+string字符串
+      字符串是 Python 中最常用的数据类型。我们可以使用引号('或")来创建字符串。
+      基础操作：+	字符串连接	   *	重复输出字符串  [ : ]	截取字符串中的一部分
+      读取方法：Python访问子字符串，可以使用方括号来截取字符串 demo：print "var[1:5]: ", var[1:5]
+      字符串相关方法：find   检测 str 是否包含在 mystr中，如果是返回开始的索引值，否则返回-1 
+                            mystr.find(str, start=0, end=len(mystr))mystr.rfind(从右开始找)
+                     index  跟find()方法一样，只不过如果str不在 mystr中会报一个异常.
+                            mystr.index(str, start=0, end=len(mystr))   加r从右
+                     count  返回 str在start和end之间 在 mystr里面出现的次数
+                            mystr.count(str, start=0, end=len(mystr))
+                     replace 原字符串不改 把 mystr 中的 str1 替换成 str2,如果 count 指定，则替换不超过 count 次.
+                            mystr.replace(str1, str2,  mystr.count(str1))
+                     split   以 str 为分隔符切片 mystr，如果 maxsplit有指定值，则仅分隔 maxsplit 个子字符串
+                            mystr.split(str=" ", 2)    什么不填表示删除所有空白字符 例如：空格 \t等
+                     lstrip  删除 mystr 左边的空白字符 
+                            mystr.lstrip()
+                     strip   删除mystr字符串两端的空白字符
+      字符串格式化方法： 格式化符号：  %c	 格式化字符及其ASCII码
+                                    %s	 格式化字符串
+                                    %d	 格式化整数
+                                    %u	 格式化无符号整型
+                                    %o	 格式化无符号八进制数
+                                    %x	 格式化无符号十六进制数
+                                    %X	 格式化无符号十六进制数（大写）
+                                    %f	 格式化浮点数字，可指定小数点后的精度
+                                    %e	 用科学计数法格式化浮点数
+                                    %E	 作用同%e，用科学计数法格式化浮点数
+                                    %g	 %f和%e的简写
+                                    %G	 %f 和 %E 的简写
+                                    %p	 用十六进制数格式化变量的地址
+                                    
