@@ -1,0 +1,65 @@
+Dict字典
+       定义：字典是一系列键—值对 。每个键 都与一个值相关联，你可以使用键来访问与之相关联的值。与键相关联的值可以是数字、字符串、列表乃至字典。
+       创建：字典用放在花括号{} 中的一系列键—值对表示  demo：info ={'name':'班长', 'id':100, 'sex':'f', 'address':'地球亚洲中国北京'}
+       字典的方法：
+                 字典的每个元素中的数据是可以修改的，只要通过key找到，即可修改
+                 如果在使用 变量名['键'] = 数据 时，这个“键”在字典中，不存在，那么就会新增这个元素
+                 对字典进行删除操作，有一下几种：
+                                              del
+                                              clear()
+                                              del可删除指定元素  del info['name']
+                                              del删除整个字典  del info
+                                              clear清空整个字典   info.clear()
+                 查询元素xxx.get(key)
+                 len()
+                 测量字典中，键值对的个数   len(xxxx)
+                 keys
+                 返回一个包含字典所有KEY的列表  xxxx.keys()
+                 values
+                 返回一个包含字典所有value的列表xxxx.values()
+                 items
+                 返回一个包含所有（键，值）元祖的列表 xxxx.tiems()
+                 has_key
+                 xxxx.has_key(key)如果key在字典中，返回True，否则返回False 
+    
+Set集合
+        定义：集合（set）是一个无序的不重复元素序列。
+        创建：可以使用大括号 { } 或者 set() 函数创建集合，注意：创建一个空集合必须用 set() 而不是 { }，因为 { } 是用来创建一个空字典。
+        集合内置的方法：
+                      add()	为集合添加元素
+                      clear()	移除集合中的所有元素
+                      copy()	拷贝一个集合
+                      difference()	返回多个集合的差集
+                      difference_update()	移除集合中的元素，该元素在指定的集合也存在。
+                      discard()	删除集合中指定的元素
+                      intersection()	返回集合的交集
+                      intersection_update()	删除集合中的元素，该元素在指定的集合中不存在。
+                      isdisjoint()	判断两个集合是否包含相同的元素，如果没有返回 True，否则返回 False。
+                      issubset()	判断指定集合是否为该方法参数集合的子集。
+                      issuperset()	判断该方法的参数集合是否为指定集合的子集
+                      pop()	随机移除元素
+                      remove()	移除指定元素
+                      symmetric_difference()	返回两个集合中不重复的元素集合。
+                      symmetric_difference_update()	移除当前集合中在另外一个指定集合相同的元素，并将另外一个指定集合中不同的元素插入到当前集合中。
+                      union()	返回两个集合的并集
+                      update()	给集合添加元素
+
+判断语句
+        while循环(代码需重复执行但不知具体次数时可while True)
+        while 条件：
+        条件满足执行的事情
+        嵌套语句（类似c）  行首对齐的代表c中{}
+        for循环和for-else循环
+        for 临时变量 in 列表或者字符串等:
+        if条件
+                循环满足条件时执行的代码
+        break #如果无break else必执行
+        else:
+            循环不满足条件时执行的代码
+        break 跳出大循环
+        continue  跳出小循环执行下次循环  
+ 
+ 三目表达式
+        若想表达int res = a > b : a ? b
+        res = 条件成立语句 if 条件 else 条件不成立的语句
+        res = a if a > b else b  #条件放在了中间
